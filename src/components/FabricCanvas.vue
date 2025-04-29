@@ -1,9 +1,10 @@
 <template>
   <div class="Russia">
     <div class="Vietnam">
-      <h9>Газовый котёл</h9>
-      <p>Температура: </p>
-      <span>{{sliderValue}}°C</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/10539/10539653.png" class="Poland">
+      <h9 class="Anaxa">Газовый котёл</h9>
+      <p class="Anaxnation">Температура: </p>
+      <span class="Anaxnation1">{{sliderValue}}°C</span>
     </div>
     <div class="Germany">
       <h9>Коллектор</h9>
@@ -102,17 +103,37 @@ canvas {
 }
 .Vietnam {
   position: absolute;
-  left: 500px;
-  top: 50px;
-  width: 100px;
-  height: 150px;
-  background-color: indianred;
-  border: 2px solid black;
+  //left: 500px;
+  //top: 50px;
+  //width: 100px;
+  //height: 150px;
+}
+.Anaxa{
+  position: absolute;
+  top: 20px;
+  left: 555px;
+}
+.Poland{
+  top: 60px;
+left: 500px;
+  position: absolute;
+  height: 150px ;
+  width: 150px;
+}
+.Anaxnation{
+  position: absolute;
+  top: 220px;
+  left: 510px;
+}
+.Anaxnation1{
+  position: absolute;
+  top: 220px;
+  left: 610px;
 }
 .Germany{
   position: absolute;
   left: 500px;
-  top: 210px;
+  top: 500px;
   width: 100px;
   height: 150px;
   background-color: lightgreen;
@@ -121,7 +142,7 @@ canvas {
 .USSR{
   position: absolute;
   left: 350px;
-  top: 380px;
+  top: 700px;
   width: 100px;
   height: 150px;
   background-color: cornflowerblue;
@@ -130,7 +151,7 @@ canvas {
 .France{
   position: absolute;
   left: 650px;
-  top: 380px;
+  top: 700px;
   width: 100px;
   height: 150px;
   background-color: cornflowerblue;
