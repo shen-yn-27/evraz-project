@@ -7,17 +7,19 @@
       <span class="Anaxnation1">{{sliderValue}}°C</span>
     </div>
     <div class="Germany">
-      <h9>Коллектор</h9>
-      <p>Кран кухни: </p>
-      <span>{{sliderValue1}}%</span>
-      <p>Кран ванной: </p>
-      <span>{{sliderValue2}}%</span>
+      <h9 class="Castorice">Коллектор</h9>
+      <img src="https://cdn-icons-png.flaticon.com/512/3980/3980530.png" class="Phaenon">
+      <p class="Yy">Кран кухни: </p>
+      <span class="Yy1">{{sliderValue1}}%</span>
+      <p class="Mydei">Кран ванной: </p>
+      <span class="Jarilo">{{sliderValue2}}%</span>
     </div>
     <div class="USSR">
-      <h9>Кухня</h9>
-      <p>Температура: </p>
+      <h9 class="Tt">Кухня</h9>
+      <img src="https://cdn-icons-png.flaticon.com/512/963/963883.png" class="DanHeng">
+      <p class="Tt1">Температура: </p>
 
-      <span>{{sliderValue - 5 }}°C</span>
+      <span class="Tt2">{{sliderValue - 5 }}°C</span>
     </div>
     <div class="France">
       <h9>Ванная</h9>
@@ -132,21 +134,75 @@ left: 500px;
 }
 .Germany{
   position: absolute;
+  //left: 500px;
+  //top: 500px;
+  //width: 100px;
+  //height: 150px;
+  //background-color: lightgreen;
+  //border: 2px solid black;
+}
+.Phaenon{
+  position: absolute;
+  top: 270px;
   left: 500px;
-  top: 500px;
-  width: 100px;
   height: 150px;
-  background-color: lightgreen;
-  border: 2px solid black;
+  width: 150px;
+}
+.Castorice{
+  position: absolute;
+  top: 270px;
+  left: 540px;
+}
+.Yy{
+  position: absolute;
+  top: 400px;
+  left: 500px;
+}
+.Yy1{
+  position: absolute;
+  top: 400px;
+  left: 540px;
+}
+.Mydei{
+  position: absolute;
+  top: 400px;
+  left: 580px;
+}
+.Jarilo{
+  position: absolute;
+  top: 400px;
+  left: 630px;
 }
 .USSR{
   position: absolute;
-  left: 350px;
-  top: 700px;
-  width: 100px;
+  //left: 350px;
+  //top: 700px;
+  //width: 100px;
+  //height: 150px;
+  //background-color: cornflowerblue;
+  //border: 2px solid black;
+}
+.DanHeng{
+  position: absolute;
+  top: 500px;
+  left: 250px;
   height: 150px;
-  background-color: cornflowerblue;
-  border: 2px solid black;
+  width: 150px;
+}
+.Tt{
+  position: absolute;
+  top: 470px;
+  left: 300px;
+}
+.Tt1{
+  position: absolute;
+  top: 666px;
+  left: 250px;
+}
+.Tt2{
+  position: absolute;
+  top: 666px;
+  left: 345px;
 }
 .France{
   position: absolute;
