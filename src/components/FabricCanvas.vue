@@ -22,15 +22,34 @@
       <span class="Tt2">{{sliderValue - 5 }}°C</span>
     </div>
     <div class="France">
-      <h9>Ванная</h9>
-      <p>Температура: </p>
-      <span>{{sliderValue - 5}}°C</span>
+      <h9 class="op3">Ванная</h9>
+      <img src="https://cdn-icons-png.flaticon.com/512/1375/1375681.png" class="Op">
+      <p class="Op2">Температура: </p>
+      <span class="op4">{{sliderValue - 5}}°C</span>
     </div>
     <div class="China">
-      <h9>Обратный коллектор</h9>
-      <p>Температура: </p>
-      <span>{{sliderValue}}°C</span>
+      <h9 class="Uy1">Обратный коллектор</h9>
+      <img src="https://ae04.alicdn.com/kf/H6b426fd3a9a8419a8f33598cb67a97395.jpg" class="Uy">
+      <p class="Uy2">Температура: </p>
+      <span class="Uy3">{{sliderValue}}°C</span>
     </div>
+    <div class="Ti"></div>
+    <div class="Tu"></div>
+    <div class="Ty"></div>
+    <div class="Tr"></div>
+    <div class="Te"></div>
+    <div class="Tw"></div>
+    <div class="To"></div>
+    <div class="Tp"></div>
+    <div class="Ta"></div>
+    <div class="Ts"></div>
+    <div class="Td"></div>
+    <div class="Tf"></div>
+    <div class="Tg"></div>
+    <div class="Th"></div>
+    <div class="Tj"></div>
+    <div class="Tk"></div>
+
   </div>
   <div>
 
@@ -77,7 +96,6 @@
 
 
 
-
   </div>
 </template>
 <script setup>
@@ -97,6 +115,144 @@ const sliderValue2 = ref(0);
 canvas {
   border: 1px solid #ccc;
 }
+.Ti{
+  background-color: indianred;
+  height: 10px;
+  width: 130px;
+  position: absolute;
+  top: 150px;
+  left: 625px;
+}
+
+.Tu{
+  background-color: indianred;
+  height: 180px;
+  width: 10px;
+  position: absolute;
+  top: 150px;
+  left: 755px;
+}
+.Ty{
+  background-color: indianred;
+  height: 10px;
+  width: 110px;
+  position: absolute;
+  top: 320px;
+  left: 650px;
+}
+.Tr{
+  background-color: indianred;
+  height: 220px;
+  width: 10px;
+  position: absolute;
+  top: 389px;
+  left: 607px;
+}
+.Te{
+
+  background-color: indianred;
+  height: 10px;
+  width: 130px;
+  position: absolute;
+  top: 609px;
+  left: 607px;
+
+}
+
+.Tw{
+  background-color: indianred;
+  height: 220px;
+  width: 10px;
+  position: absolute;
+  top: 389px;
+  left: 532px;
+}
+
+.To{
+  background-color: indianred;
+  height: 10px;
+  width: 130px;
+  position: absolute;
+  top: 609px;
+  left: 412px;
+}
+
+.Tp{
+  background-color: cornflowerblue;
+  height: 100px;
+  width: 10px;
+  position: absolute;
+  top: 660px;
+  left: 800px;
+}
+
+.Ta{
+  background-color: cornflowerblue;
+  height: 10px;
+  width: 185px;
+  position: absolute;
+  top: 760px;
+  left: 625px;
+}
+
+.Ts{
+  background-color: cornflowerblue;
+  height: 40px;
+  width: 10px;
+  position: absolute;
+  top: 760px;
+  left: 615px;
+}
+
+.Td{
+  background-color: cornflowerblue;
+  height: 100px;
+  width: 10px;
+  position: absolute;
+  top: 660px;
+  left: 320px;
+}
+.Tf{
+  background-color: cornflowerblue;
+  height: 10px;
+  width: 205px;
+  position: absolute;
+  top: 760px;
+  left: 320px;
+}
+.Tg{
+  background-color: cornflowerblue;
+  height: 40px;
+  width: 10px;
+  position: absolute;
+  top: 760px;
+  left: 523px;
+}
+
+.Th{
+  background-color: cornflowerblue;
+  height: 10px;
+  width: 300px;
+  position: absolute;
+  top: 822px;
+  left: 202px;
+}
+.Tj{
+  background-color: cornflowerblue;
+  height: 680px;
+  width: 10px;
+  position: absolute;
+  top: 150px;
+  left: 202px;
+}
+.Tk{
+  background-color: cornflowerblue;
+  height: 10px;
+  width: 322px;
+  position: absolute;
+  top: 150px;
+  left: 202px;
+}
 .Russia{
   width: 100%;
   height: 110vh;
@@ -105,15 +261,11 @@ canvas {
 }
 .Vietnam {
   position: absolute;
-  //left: 500px;
-  //top: 50px;
-  //width: 100px;
-  //height: 150px;
 }
 .Anaxa{
   position: absolute;
   top: 20px;
-  left: 555px;
+  left: 546px;
 }
 .Poland{
   top: 60px;
@@ -134,12 +286,6 @@ left: 500px;
 }
 .Germany{
   position: absolute;
-  //left: 500px;
-  //top: 500px;
-  //width: 100px;
-  //height: 150px;
-  //background-color: lightgreen;
-  //border: 2px solid black;
 }
 .Phaenon{
   position: absolute;
@@ -156,31 +302,25 @@ left: 500px;
 .Yy{
   position: absolute;
   top: 400px;
-  left: 500px;
+  left: 460px;
 }
 .Yy1{
   position: absolute;
   top: 400px;
-  left: 540px;
+  left: 500px;
 }
 .Mydei{
   position: absolute;
   top: 400px;
-  left: 580px;
+  left: 630px;
 }
 .Jarilo{
   position: absolute;
   top: 400px;
-  left: 630px;
+  left: 670px;
 }
 .USSR{
   position: absolute;
-  //left: 350px;
-  //top: 700px;
-  //width: 100px;
-  //height: 150px;
-  //background-color: cornflowerblue;
-  //border: 2px solid black;
 }
 .DanHeng{
   position: absolute;
@@ -191,6 +331,7 @@ left: 500px;
 }
 .Tt{
   position: absolute;
+
   top: 470px;
   left: 300px;
 }
@@ -198,34 +339,70 @@ left: 500px;
   position: absolute;
   top: 666px;
   left: 250px;
+  z-index: 3;
 }
 .Tt2{
   position: absolute;
   top: 666px;
   left: 345px;
+  z-index: 2;
 }
 .France{
   position: absolute;
-  left: 650px;
-  top: 700px;
-  width: 100px;
+}
+.Op{
+  position: absolute;
+  top: 500px;
+  left: 750px;
   height: 150px;
-  background-color: cornflowerblue;
-  border: 2px solid black;
+  width: 150px;
+}
+.op3{
+  position: absolute;
+  top: 470px;
+  left: 800px;
+}
+.Op2{
+  position: absolute;
+  top: 666px;
+  left: 750px;
+  z-index: 3;
+}
+.op4{
+  position: absolute;
+  top: 666px;
+  left: 845px;
+  z-index: 3;
 }
 .China{
   position: absolute;
+}
+.Uy{
+  position: absolute;
+  top: 750px;
   left: 500px;
-  top: 550px;
-  width: 100px;
   height: 150px;
-  background-color: lightgoldenrodyellow;
-  border: 2px solid black;
+  width: 150px;
+}
+.Uy1{
+  position: absolute;
+  top: 700px;
+  left: 530px;
+}
+.Uy2{
+  position: absolute;
+  top: 880px;
+  left: 510px;
+}
+.Uy3{
+  position: absolute;
+  top: 880px;
+  left: 600px;
 }
 .Japan{
   position: absolute;
   left: 320px;
-  top: 705px;
+  top: 950px;
   font-size: 11px;
 }
 body{
