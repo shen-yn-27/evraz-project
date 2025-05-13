@@ -4,34 +4,34 @@
       <img src="https://cdn-icons-png.flaticon.com/512/10539/10539653.png" class="Poland">
       <h9 class="Anaxa">Газовый котёл</h9>
       <p class="Anaxnation">Температура: </p>
-      <span class="Anaxnation1">{{sliderValue}}°C</span>
+      <span class="Anaxnation1">{{sliderValue5}}°C</span>
     </div>
     <div class="Germany">
       <h9 class="Castorice">Коллектор</h9>
       <img src="https://cdn-icons-png.flaticon.com/512/3980/3980530.png" class="Phaenon">
       <p class="Yy">Кран кухни: </p>
-      <span class="Yy1">{{sliderValue1}}%</span>
+      <span class="Yy1">{{sliderValue4}}%</span>
       <p class="Mydei">Кран ванной: </p>
-      <span class="Jarilo">{{sliderValue2}}%</span>
+      <span class="Jarilo">{{sliderValue3}}%</span>
     </div>
     <div class="USSR">
       <h9 class="Tt">Кухня</h9>
       <img src="https://cdn-icons-png.flaticon.com/512/963/963883.png" class="DanHeng">
       <p class="Tt1">Температура: </p>
 
-      <span class="Tt2">{{sliderValue - 5 }}°C</span>
+      <span class="Tt2">{{sliderValue5 - 5 }}°C</span>
     </div>
     <div class="France">
       <h9 class="op3">Ванная</h9>
       <img src="https://cdn-icons-png.flaticon.com/512/1375/1375681.png" class="Op">
       <p class="Op2">Температура: </p>
-      <span class="op4">{{sliderValue - 5}}°C</span>
+      <span class="op4">{{sliderValue5 - 5}}°C</span>
     </div>
     <div class="China">
       <h9 class="Uy1">Обратный коллектор</h9>
       <img src="https://ae04.alicdn.com/kf/H6b426fd3a9a8419a8f33598cb67a97395.jpg" class="Uy">
       <p class="Uy2">Температура: </p>
-      <span class="Uy3">{{sliderValue}}°C</span>
+      <span class="Uy3">{{sliderValue5}}°C</span>
     </div>
     <div class="Ti"></div>
     <div class="Tu"></div>
@@ -90,16 +90,13 @@
         value="40"
         step="33"
         class="slider2"
-        v-model="sliderValue2">
+        v-model.lazy="sliderValue2">
       <input v-model="sliderValue2" type="number">
     </div>
-
-
-
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 
 
 const canvas = ref();
@@ -107,8 +104,49 @@ const canvas = ref();
 const sliderValue = ref(40);
 const sliderValue1 = ref(0);
 const sliderValue2 = ref(0);
+const sliderValue3 = ref(0);
+const sliderValue4 = ref(0);
+const sliderValue5 = ref(0);
 
-
+watch(sliderValue2, () => {
+  let interval = setInterval(() => {
+    if (sliderValue2.value > sliderValue3.value) {
+      sliderValue3.value += 1
+    }
+    else if (sliderValue2.value < sliderValue3.value){
+      sliderValue3.value -= 1
+    }
+    else {
+      clearInterval(interval)
+    }
+  }, 100)
+})
+watch(sliderValue1, () => {
+  let interval = setInterval(() => {
+    if (sliderValue1.value > sliderValue4.value) {
+      sliderValue4.value += 1
+    }
+    else if (sliderValue1.value < sliderValue4.value){
+      sliderValue4.value -= 1
+    }
+    else {
+      clearInterval(interval)
+    }
+  }, 100)
+})
+watch(sliderValue, () => {
+  let interval = setInterval(() => {
+    if (sliderValue.value > sliderValue5.value) {
+      sliderValue5.value += 1
+    }
+    else if (sliderValue.value < sliderValue5.value){
+      sliderValue5.value -= 1
+    }
+    else {
+      clearInterval(interval)
+    }
+  }, 300)
+})
 
 </script>
 <style scoped>
