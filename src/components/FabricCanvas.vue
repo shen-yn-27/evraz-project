@@ -1,5 +1,6 @@
 <template>
   <div class="Russia">
+    <button v-on:click="ty" class="but">{{button}}</button>
     <div class="Vietnam">
       <img src="https://cdn-icons-png.flaticon.com/512/10539/10539653.png" class="Poland">
       <h9 class="Anaxa">Газовый котёл</h9>
@@ -100,7 +101,7 @@ import { ref, watch, onMounted } from 'vue';
 
 
 const canvas = ref();
-
+let button = ref('вкл')
 const sliderValue = ref(40);
 const sliderValue1 = ref(0);
 const sliderValue2 = ref(0);
@@ -148,10 +149,33 @@ watch(sliderValue, () => {
   }, 300)
 })
 
+function ty() {
+
+  if (button.value === "вкл") {
+    button.value = "выкл";
+
+
+  }
+  else {
+    button.value = "вкл";
+  }
+}
+
 </script>
 <style scoped>
 canvas {
   border: 1px solid #ccc;
+}
+A{
+  background: linear-gradient(to right, indianred, cornflowerblue);
+}
+.but{
+  position: absolute;
+  left: 545.5px;
+  top: 105px;
+  z-index: 3;
+  height: 56px;
+  width: 59px;
 }
 .Ti{
   background-color: indianred;
@@ -216,7 +240,7 @@ canvas {
 }
 
 .Tp{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 100px;
   width: 10px;
   position: absolute;
@@ -225,7 +249,7 @@ canvas {
 }
 
 .Ta{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 10px;
   width: 185px;
   position: absolute;
@@ -234,7 +258,7 @@ canvas {
 }
 
 .Ts{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, cornflowerblue, indianred);
   height: 40px;
   width: 10px;
   position: absolute;
@@ -243,7 +267,7 @@ canvas {
 }
 
 .Td{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 100px;
   width: 10px;
   position: absolute;
@@ -251,7 +275,7 @@ canvas {
   left: 320px;
 }
 .Tf{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 10px;
   width: 205px;
   position: absolute;
@@ -259,7 +283,7 @@ canvas {
   left: 320px;
 }
 .Tg{
-  background-color: cornflowerblue;
+  background: linear-gradient(to right, cornflowerblue, indianred);
   height: 40px;
   width: 10px;
   position: absolute;
