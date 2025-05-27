@@ -34,19 +34,19 @@
       <p class="Uy2">Температура: </p>
       <span class="Uy3">{{sliderValue5}}°C</span>
     </div>
-    <div class="Ti"></div>
-    <div class="Tu"></div>
-    <div class="Ty"></div>
-    <div class="Tr"></div>
-    <div class="Te"></div>
-    <div class="Tw"></div>
-    <div class="To"></div>
-    <div class="Tp"></div>
-    <div class="Ta"></div>
-    <div class="Ts"></div>
-    <div class="Td"></div>
-    <div class="Tf"></div>
-    <div class="Tg"></div>
+    <div class="Ti" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tu" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Ty" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tr" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Te" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tw" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="To" :class="{ 'test': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tp" :class="{ 'A': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Ta" :class="{ 'A': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Ts" :class="{ 'B': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Td" :class="{ 'A': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tf" :class="{ 'A': button === 'вкл', 'test1': button === 'выкл' }"></div>
+    <div class="Tg" :class="{ 'B': button === 'вкл', 'test1': button === 'выкл' }"></div>
     <div class="Th"></div>
     <div class="Tj"></div>
     <div class="Tk"></div>
@@ -166,8 +166,11 @@ function ty() {
 canvas {
   border: 1px solid #ccc;
 }
-A{
+.A{
   background: linear-gradient(to right, indianred, cornflowerblue);
+}
+.B{
+  background: linear-gradient(to right, cornflowerblue, indianred);
 }
 .but{
   position: absolute;
@@ -177,8 +180,13 @@ A{
   height: 56px;
   width: 59px;
 }
-.Ti{
+.test{
   background-color: indianred;
+}
+.test1{
+  background-color: cornflowerblue;
+}
+.Ti{
   height: 10px;
   width: 130px;
   position: absolute;
@@ -187,7 +195,6 @@ A{
 }
 
 .Tu{
-  background-color: indianred;
   height: 180px;
   width: 10px;
   position: absolute;
@@ -195,7 +202,6 @@ A{
   left: 755px;
 }
 .Ty{
-  background-color: indianred;
   height: 10px;
   width: 110px;
   position: absolute;
@@ -203,7 +209,6 @@ A{
   left: 650px;
 }
 .Tr{
-  background-color: indianred;
   height: 220px;
   width: 10px;
   position: absolute;
@@ -212,7 +217,6 @@ A{
 }
 .Te{
 
-  background-color: indianred;
   height: 10px;
   width: 130px;
   position: absolute;
@@ -222,7 +226,6 @@ A{
 }
 
 .Tw{
-  background-color: indianred;
   height: 220px;
   width: 10px;
   position: absolute;
@@ -231,7 +234,6 @@ A{
 }
 
 .To{
-  background-color: indianred;
   height: 10px;
   width: 130px;
   position: absolute;
@@ -240,7 +242,6 @@ A{
 }
 
 .Tp{
-  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 100px;
   width: 10px;
   position: absolute;
@@ -249,7 +250,6 @@ A{
 }
 
 .Ta{
-  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 10px;
   width: 185px;
   position: absolute;
@@ -258,7 +258,6 @@ A{
 }
 
 .Ts{
-  background: linear-gradient(to right, cornflowerblue, indianred);
   height: 40px;
   width: 10px;
   position: absolute;
@@ -267,7 +266,6 @@ A{
 }
 
 .Td{
-  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 100px;
   width: 10px;
   position: absolute;
@@ -275,7 +273,6 @@ A{
   left: 320px;
 }
 .Tf{
-  background: linear-gradient(to right, indianred, cornflowerblue);
   height: 10px;
   width: 205px;
   position: absolute;
@@ -283,7 +280,6 @@ A{
   left: 320px;
 }
 .Tg{
-  background: linear-gradient(to right, cornflowerblue, indianred);
   height: 40px;
   width: 10px;
   position: absolute;
