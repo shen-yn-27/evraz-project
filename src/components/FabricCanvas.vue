@@ -30,7 +30,7 @@
     </div>
     <div class="China">
       <h9 class="Uy1">Обратный коллектор</h9>
-      <img src="https://ae04.alicdn.com/kf/H6b426fd3a9a8419a8f33598cb67a97395.jpg" class="Uy">
+      <img src="https://cdn-icons-png.flaticon.com/512/3980/3980530.png" class="Uy">
       <p class="Uy2">Температура: </p>
       <span class="Uy3">{{sliderValue5}}°C</span>
     </div>
@@ -150,14 +150,27 @@ watch(sliderValue, () => {
 })
 
 function ty() {
-
   if (button.value === "вкл") {
     button.value = "выкл";
-
-
+    let interval = setInterval(() => {
+      if (sliderValue.value > 25){
+        sliderValue.value -= 1
+      }
+      else {
+        clearInterval(interval)
+      }
+    }, 300)
   }
   else {
     button.value = "вкл";
+    let interval = setInterval(() => {
+      if (sliderValue.value < 40) {
+        sliderValue.value += 1
+      }
+      else {
+        clearInterval(interval)
+      }
+    }, 300)
   }
 }
 
@@ -242,7 +255,7 @@ canvas {
 }
 
 .Tp{
-  height: 100px;
+  height: 85px;
   width: 10px;
   position: absolute;
   top: 660px;
@@ -251,22 +264,22 @@ canvas {
 
 .Ta{
   height: 10px;
-  width: 185px;
+  width: 190px;
   position: absolute;
-  top: 760px;
-  left: 625px;
+  top: 745px;
+  left: 620px;
 }
 
 .Ts{
-  height: 40px;
+  height: 12px;
   width: 10px;
   position: absolute;
-  top: 760px;
-  left: 615px;
+  top: 745px;
+  left: 612px;
 }
 
 .Td{
-  height: 100px;
+  height: 85px;
   width: 10px;
   position: absolute;
   top: 660px;
@@ -274,17 +287,17 @@ canvas {
 }
 .Tf{
   height: 10px;
-  width: 205px;
+  width: 215px;
   position: absolute;
-  top: 760px;
+  top: 745px;
   left: 320px;
 }
 .Tg{
-  height: 40px;
+  height: 12px;
   width: 10px;
   position: absolute;
-  top: 760px;
-  left: 523px;
+  top: 745px;
+  left: 533px;
 }
 
 .Th{
@@ -436,9 +449,10 @@ left: 500px;
   position: absolute;
 }
 .Uy{
+  rotate: 180deg;
   position: absolute;
-  top: 750px;
-  left: 500px;
+  top: 725px;
+  left: 502px;
   height: 150px;
   width: 150px;
 }
